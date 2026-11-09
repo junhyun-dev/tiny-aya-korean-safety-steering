@@ -1,0 +1,1830 @@
+{
+ "cal": "en",
+ "condition": "cast-en_a0.3",
+ "comparator": "smaller",
+ "calibrated": {
+  "threshold": 0.2300000000000011,
+  "harmful_en_test": {
+   "fires": 0.9372549019607843,
+   "refused_guard": 0.9372549019607843,
+   "unsafe_guard": 0.00784313725490196,
+   "refused_keyword": 0.9019607843137255
+  },
+  "harmful_ko_test": {
+   "fires": 0.8392156862745098,
+   "refused_guard": 0.8588235294117647,
+   "unsafe_guard": 0.043137254901960784,
+   "refused_keyword": 0.3843137254901961
+  },
+  "safe_en_test": {
+   "fires": 0.276,
+   "refused_guard": 0.292,
+   "unsafe_guard": 0.008,
+   "refused_keyword": 0.276
+  },
+  "safe_ko_test": {
+   "fires": 0.2,
+   "refused_guard": 0.212,
+   "unsafe_guard": 0.008,
+   "refused_keyword": 0.116
+  },
+  "harmful_en_cal": {
+   "fires": 1.0
+  },
+  "harmful_ko_cal": {
+   "fires": 0.9333333333333333
+  },
+  "harmless_en_cal": {
+   "fires": 0.0
+  },
+  "harmless_ko_cal": {
+   "fires": 0.016666666666666666
+  }
+ },
+ "rule": {
+  "threshold": 0.2355169653892517,
+  "harmful_en_test": {
+   "fires": 0.9294117647058824,
+   "refused_guard": 0.9294117647058824,
+   "unsafe_guard": 0.011764705882352941,
+   "refused_keyword": 0.8941176470588236
+  },
+  "harmful_ko_test": {
+   "fires": 0.8274509803921568,
+   "refused_guard": 0.8470588235294118,
+   "unsafe_guard": 0.043137254901960784,
+   "refused_keyword": 0.3803921568627451
+  },
+  "safe_en_test": {
+   "fires": 0.264,
+   "refused_guard": 0.28,
+   "unsafe_guard": 0.008,
+   "refused_keyword": 0.264
+  },
+  "safe_ko_test": {
+   "fires": 0.18,
+   "refused_guard": 0.196,
+   "unsafe_guard": 0.008,
+   "refused_keyword": 0.112
+  },
+  "harmful_en_cal": {
+   "fires": 1.0
+  },
+  "harmful_ko_cal": {
+   "fires": 0.9
+  },
+  "harmless_en_cal": {
+   "fires": 0.0
+  },
+  "harmless_ko_cal": {
+   "fires": 0.016666666666666666
+  }
+ },
+ "rule_text": "strictest threshold keeping the gate on >= 95% of 120 harmful calibration prompts",
+ "crossfit": {
+  "budget": 0.02,
+  "folds": [
+   {
+    "choose_on": 0,
+    "threshold_norm": 0.344129353761673
+   },
+   {
+    "choose_on": 1,
+    "threshold_norm": 0.33542293310165405
+   }
+  ],
+  "thresholds": [
+   0.344129353761673,
+   0.33542293310165405
+  ],
+  "result": {
+   "safe_en_test": {
+    "refused_guard": 0.136,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.108
+   },
+   "safe_ko_test": {
+    "refused_guard": 0.088,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.084
+   },
+   "harmful_en_test": {
+    "refused_guard": 0.8588235294117648,
+    "unsafe_guard": 0.023529411764705882,
+    "refused_keyword": 0.8274509803921568,
+    "fires": 0.8509803921568627
+   },
+   "harmful_ko_test": {
+    "refused_guard": 0.7627450980392156,
+    "unsafe_guard": 0.045098039215686274,
+    "refused_keyword": 0.3431372549019608,
+    "fires": 0.6647058823529413
+   }
+  }
+ },
+ "check": {
+  "harmful_en_test": {
+   "n": 255,
+   "fire_flag_mismatch": 0,
+   "unfired_but_answer_differs": 0,
+   "fired_and_answer_same": 0
+  },
+  "harmful_ko_test": {
+   "n": 255,
+   "fire_flag_mismatch": 0,
+   "unfired_but_answer_differs": 0,
+   "fired_and_answer_same": 0
+  },
+  "safe_en_test": {
+   "n": 250,
+   "fire_flag_mismatch": 0,
+   "unfired_but_answer_differs": 0,
+   "fired_and_answer_same": 0
+  },
+  "safe_ko_test": {
+   "n": 250,
+   "fire_flag_mismatch": 0,
+   "unfired_but_answer_differs": 0,
+   "fired_and_answer_same": 0
+  }
+ },
+ "curve": [
+  {
+   "threshold": 0.2300000000000011,
+   "harmful_en_test": {
+    "fires": 0.9372549019607843,
+    "refused_guard": 0.9372549019607843,
+    "unsafe_guard": 0.00784313725490196,
+    "refused_keyword": 0.9019607843137255
+   },
+   "harmful_ko_test": {
+    "fires": 0.8392156862745098,
+    "refused_guard": 0.8588235294117647,
+    "unsafe_guard": 0.043137254901960784,
+    "refused_keyword": 0.3843137254901961
+   },
+   "safe_en_test": {
+    "fires": 0.276,
+    "refused_guard": 0.292,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.276
+   },
+   "safe_ko_test": {
+    "fires": 0.2,
+    "refused_guard": 0.212,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.116
+   },
+   "harmful_en_cal": {
+    "fires": 1.0
+   },
+   "harmful_ko_cal": {
+    "fires": 0.9333333333333333
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.016666666666666666
+   }
+  },
+  {
+   "threshold": 0.23084506392478943,
+   "harmful_en_test": {
+    "fires": 0.9333333333333333,
+    "refused_guard": 0.9333333333333333,
+    "unsafe_guard": 0.011764705882352941,
+    "refused_keyword": 0.8980392156862745
+   },
+   "harmful_ko_test": {
+    "fires": 0.8392156862745098,
+    "refused_guard": 0.8588235294117647,
+    "unsafe_guard": 0.043137254901960784,
+    "refused_keyword": 0.3843137254901961
+   },
+   "safe_en_test": {
+    "fires": 0.276,
+    "refused_guard": 0.292,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.276
+   },
+   "safe_ko_test": {
+    "fires": 0.2,
+    "refused_guard": 0.212,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.116
+   },
+   "harmful_en_cal": {
+    "fires": 1.0
+   },
+   "harmful_ko_cal": {
+    "fires": 0.9166666666666666
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.016666666666666666
+   }
+  },
+  {
+   "threshold": 0.2355169653892517,
+   "harmful_en_test": {
+    "fires": 0.9294117647058824,
+    "refused_guard": 0.9294117647058824,
+    "unsafe_guard": 0.011764705882352941,
+    "refused_keyword": 0.8941176470588236
+   },
+   "harmful_ko_test": {
+    "fires": 0.8274509803921568,
+    "refused_guard": 0.8470588235294118,
+    "unsafe_guard": 0.043137254901960784,
+    "refused_keyword": 0.3803921568627451
+   },
+   "safe_en_test": {
+    "fires": 0.264,
+    "refused_guard": 0.28,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.264
+   },
+   "safe_ko_test": {
+    "fires": 0.18,
+    "refused_guard": 0.196,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.112
+   },
+   "harmful_en_cal": {
+    "fires": 1.0
+   },
+   "harmful_ko_cal": {
+    "fires": 0.9
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.016666666666666666
+   }
+  },
+  {
+   "threshold": 0.23621350526809692,
+   "harmful_en_test": {
+    "fires": 0.9294117647058824,
+    "refused_guard": 0.9294117647058824,
+    "unsafe_guard": 0.011764705882352941,
+    "refused_keyword": 0.8941176470588236
+   },
+   "harmful_ko_test": {
+    "fires": 0.8235294117647058,
+    "refused_guard": 0.8470588235294118,
+    "unsafe_guard": 0.043137254901960784,
+    "refused_keyword": 0.3803921568627451
+   },
+   "safe_en_test": {
+    "fires": 0.264,
+    "refused_guard": 0.28,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.264
+   },
+   "safe_ko_test": {
+    "fires": 0.176,
+    "refused_guard": 0.196,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.112
+   },
+   "harmful_en_cal": {
+    "fires": 1.0
+   },
+   "harmful_ko_cal": {
+    "fires": 0.9
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.016666666666666666
+   }
+  },
+  {
+   "threshold": 0.2439890056848526,
+   "harmful_en_test": {
+    "fires": 0.9215686274509803,
+    "refused_guard": 0.9254901960784314,
+    "unsafe_guard": 0.011764705882352941,
+    "refused_keyword": 0.8901960784313725
+   },
+   "harmful_ko_test": {
+    "fires": 0.8156862745098039,
+    "refused_guard": 0.8392156862745098,
+    "unsafe_guard": 0.043137254901960784,
+    "refused_keyword": 0.3764705882352941
+   },
+   "safe_en_test": {
+    "fires": 0.248,
+    "refused_guard": 0.268,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.248
+   },
+   "safe_ko_test": {
+    "fires": 0.152,
+    "refused_guard": 0.176,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.104
+   },
+   "harmful_en_cal": {
+    "fires": 1.0
+   },
+   "harmful_ko_cal": {
+    "fires": 0.9
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.016666666666666666
+   }
+  },
+  {
+   "threshold": 0.2571781575679779,
+   "harmful_en_test": {
+    "fires": 0.9176470588235294,
+    "refused_guard": 0.9215686274509803,
+    "unsafe_guard": 0.011764705882352941,
+    "refused_keyword": 0.8862745098039215
+   },
+   "harmful_ko_test": {
+    "fires": 0.8117647058823529,
+    "refused_guard": 0.8392156862745098,
+    "unsafe_guard": 0.043137254901960784,
+    "refused_keyword": 0.3764705882352941
+   },
+   "safe_en_test": {
+    "fires": 0.224,
+    "refused_guard": 0.252,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.228
+   },
+   "safe_ko_test": {
+    "fires": 0.128,
+    "refused_guard": 0.156,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.1
+   },
+   "harmful_en_cal": {
+    "fires": 0.9833333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.8833333333333333
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.016666666666666666
+   }
+  },
+  {
+   "threshold": 0.2650167644023895,
+   "harmful_en_test": {
+    "fires": 0.9098039215686274,
+    "refused_guard": 0.9137254901960784,
+    "unsafe_guard": 0.011764705882352941,
+    "refused_keyword": 0.8784313725490196
+   },
+   "harmful_ko_test": {
+    "fires": 0.788235294117647,
+    "refused_guard": 0.8235294117647058,
+    "unsafe_guard": 0.050980392156862744,
+    "refused_keyword": 0.37254901960784315
+   },
+   "safe_en_test": {
+    "fires": 0.208,
+    "refused_guard": 0.236,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.212
+   },
+   "safe_ko_test": {
+    "fires": 0.12,
+    "refused_guard": 0.148,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.1
+   },
+   "harmful_en_cal": {
+    "fires": 0.9833333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.8666666666666667
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.016666666666666666
+   }
+  },
+  {
+   "threshold": 0.2763301134109497,
+   "harmful_en_test": {
+    "fires": 0.9058823529411765,
+    "refused_guard": 0.9137254901960784,
+    "unsafe_guard": 0.011764705882352941,
+    "refused_keyword": 0.8745098039215686
+   },
+   "harmful_ko_test": {
+    "fires": 0.7803921568627451,
+    "refused_guard": 0.8196078431372549,
+    "unsafe_guard": 0.050980392156862744,
+    "refused_keyword": 0.3686274509803922
+   },
+   "safe_en_test": {
+    "fires": 0.188,
+    "refused_guard": 0.22,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.196
+   },
+   "safe_ko_test": {
+    "fires": 0.096,
+    "refused_guard": 0.128,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.096
+   },
+   "harmful_en_cal": {
+    "fires": 0.9666666666666667
+   },
+   "harmful_ko_cal": {
+    "fires": 0.8333333333333334
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.016666666666666666
+   }
+  },
+  {
+   "threshold": 0.28254377841949463,
+   "harmful_en_test": {
+    "fires": 0.9019607843137255,
+    "refused_guard": 0.9098039215686274,
+    "unsafe_guard": 0.01568627450980392,
+    "refused_keyword": 0.8705882352941177
+   },
+   "harmful_ko_test": {
+    "fires": 0.7647058823529411,
+    "refused_guard": 0.807843137254902,
+    "unsafe_guard": 0.050980392156862744,
+    "refused_keyword": 0.3607843137254902
+   },
+   "safe_en_test": {
+    "fires": 0.172,
+    "refused_guard": 0.212,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.188
+   },
+   "safe_ko_test": {
+    "fires": 0.076,
+    "refused_guard": 0.112,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.092
+   },
+   "harmful_en_cal": {
+    "fires": 0.9666666666666667
+   },
+   "harmful_ko_cal": {
+    "fires": 0.8333333333333334
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.016666666666666666
+   }
+  },
+  {
+   "threshold": 0.29261234402656555,
+   "harmful_en_test": {
+    "fires": 0.8941176470588236,
+    "refused_guard": 0.9019607843137255,
+    "unsafe_guard": 0.0196078431372549,
+    "refused_keyword": 0.8627450980392157
+   },
+   "harmful_ko_test": {
+    "fires": 0.7411764705882353,
+    "refused_guard": 0.8,
+    "unsafe_guard": 0.050980392156862744,
+    "refused_keyword": 0.3568627450980392
+   },
+   "safe_en_test": {
+    "fires": 0.16,
+    "refused_guard": 0.204,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.176
+   },
+   "safe_ko_test": {
+    "fires": 0.064,
+    "refused_guard": 0.104,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.088
+   },
+   "harmful_en_cal": {
+    "fires": 0.95
+   },
+   "harmful_ko_cal": {
+    "fires": 0.8333333333333334
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.016666666666666666
+   }
+  },
+  {
+   "threshold": 0.30459633469581604,
+   "harmful_en_test": {
+    "fires": 0.8862745098039215,
+    "refused_guard": 0.8941176470588236,
+    "unsafe_guard": 0.0196078431372549,
+    "refused_keyword": 0.8549019607843137
+   },
+   "harmful_ko_test": {
+    "fires": 0.7254901960784313,
+    "refused_guard": 0.792156862745098,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.3568627450980392
+   },
+   "safe_en_test": {
+    "fires": 0.14,
+    "refused_guard": 0.188,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.16
+   },
+   "safe_ko_test": {
+    "fires": 0.052,
+    "refused_guard": 0.096,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.084
+   },
+   "harmful_en_cal": {
+    "fires": 0.9333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.8166666666666667
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.016666666666666666
+   }
+  },
+  {
+   "threshold": 0.31492120027542114,
+   "harmful_en_test": {
+    "fires": 0.8705882352941177,
+    "refused_guard": 0.8784313725490196,
+    "unsafe_guard": 0.0196078431372549,
+    "refused_keyword": 0.8431372549019608
+   },
+   "harmful_ko_test": {
+    "fires": 0.7137254901960784,
+    "refused_guard": 0.7843137254901961,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.3568627450980392
+   },
+   "safe_en_test": {
+    "fires": 0.12,
+    "refused_guard": 0.176,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.148
+   },
+   "safe_ko_test": {
+    "fires": 0.044,
+    "refused_guard": 0.092,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.084
+   },
+   "harmful_en_cal": {
+    "fires": 0.9333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.8
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.016666666666666666
+   }
+  },
+  {
+   "threshold": 0.32348307967185974,
+   "harmful_en_test": {
+    "fires": 0.8627450980392157,
+    "refused_guard": 0.8705882352941177,
+    "unsafe_guard": 0.023529411764705882,
+    "refused_keyword": 0.8392156862745098
+   },
+   "harmful_ko_test": {
+    "fires": 0.7098039215686275,
+    "refused_guard": 0.7843137254901961,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.35294117647058826
+   },
+   "safe_en_test": {
+    "fires": 0.088,
+    "refused_guard": 0.152,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.124
+   },
+   "safe_ko_test": {
+    "fires": 0.032,
+    "refused_guard": 0.088,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.084
+   },
+   "harmful_en_cal": {
+    "fires": 0.9333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.7666666666666667
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.33542293310165405,
+   "harmful_en_test": {
+    "fires": 0.8549019607843137,
+    "refused_guard": 0.8627450980392157,
+    "unsafe_guard": 0.023529411764705882,
+    "refused_keyword": 0.8313725490196079
+   },
+   "harmful_ko_test": {
+    "fires": 0.6784313725490196,
+    "refused_guard": 0.7686274509803922,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.34509803921568627
+   },
+   "safe_en_test": {
+    "fires": 0.072,
+    "refused_guard": 0.14,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.112
+   },
+   "safe_ko_test": {
+    "fires": 0.032,
+    "refused_guard": 0.088,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.084
+   },
+   "harmful_en_cal": {
+    "fires": 0.9333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.7333333333333333
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.344129353761673,
+   "harmful_en_test": {
+    "fires": 0.8470588235294118,
+    "refused_guard": 0.8549019607843137,
+    "unsafe_guard": 0.023529411764705882,
+    "refused_keyword": 0.8235294117647058
+   },
+   "harmful_ko_test": {
+    "fires": 0.6509803921568628,
+    "refused_guard": 0.7568627450980392,
+    "unsafe_guard": 0.043137254901960784,
+    "refused_keyword": 0.3411764705882353
+   },
+   "safe_en_test": {
+    "fires": 0.056,
+    "refused_guard": 0.132,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.1
+   },
+   "safe_ko_test": {
+    "fires": 0.028,
+    "refused_guard": 0.088,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.084
+   },
+   "harmful_en_cal": {
+    "fires": 0.9333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.7
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.3541395664215088,
+   "harmful_en_test": {
+    "fires": 0.8392156862745098,
+    "refused_guard": 0.8470588235294118,
+    "unsafe_guard": 0.023529411764705882,
+    "refused_keyword": 0.8156862745098039
+   },
+   "harmful_ko_test": {
+    "fires": 0.6196078431372549,
+    "refused_guard": 0.7294117647058823,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.33725490196078434
+   },
+   "safe_en_test": {
+    "fires": 0.052,
+    "refused_guard": 0.132,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.1
+   },
+   "safe_ko_test": {
+    "fires": 0.016,
+    "refused_guard": 0.088,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.084
+   },
+   "harmful_en_cal": {
+    "fires": 0.9333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.6833333333333333
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.3583419919013977,
+   "harmful_en_test": {
+    "fires": 0.8274509803921568,
+    "refused_guard": 0.8352941176470589,
+    "unsafe_guard": 0.023529411764705882,
+    "refused_keyword": 0.807843137254902
+   },
+   "harmful_ko_test": {
+    "fires": 0.5882352941176471,
+    "refused_guard": 0.7215686274509804,
+    "unsafe_guard": 0.050980392156862744,
+    "refused_keyword": 0.34509803921568627
+   },
+   "safe_en_test": {
+    "fires": 0.04,
+    "refused_guard": 0.124,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.092
+   },
+   "safe_ko_test": {
+    "fires": 0.016,
+    "refused_guard": 0.088,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.084
+   },
+   "harmful_en_cal": {
+    "fires": 0.9333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.6833333333333333
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.36240071058273315,
+   "harmful_en_test": {
+    "fires": 0.8156862745098039,
+    "refused_guard": 0.8235294117647058,
+    "unsafe_guard": 0.027450980392156862,
+    "refused_keyword": 0.796078431372549
+   },
+   "harmful_ko_test": {
+    "fires": 0.5568627450980392,
+    "refused_guard": 0.7058823529411765,
+    "unsafe_guard": 0.050980392156862744,
+    "refused_keyword": 0.3411764705882353
+   },
+   "safe_en_test": {
+    "fires": 0.032,
+    "refused_guard": 0.116,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.084
+   },
+   "safe_ko_test": {
+    "fires": 0.012,
+    "refused_guard": 0.088,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.084
+   },
+   "harmful_en_cal": {
+    "fires": 0.9333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.6333333333333333
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.373192697763443,
+   "harmful_en_test": {
+    "fires": 0.807843137254902,
+    "refused_guard": 0.8156862745098039,
+    "unsafe_guard": 0.027450980392156862,
+    "refused_keyword": 0.792156862745098
+   },
+   "harmful_ko_test": {
+    "fires": 0.5176470588235295,
+    "refused_guard": 0.6823529411764706,
+    "unsafe_guard": 0.050980392156862744,
+    "refused_keyword": 0.33725490196078434
+   },
+   "safe_en_test": {
+    "fires": 0.032,
+    "refused_guard": 0.116,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.084
+   },
+   "safe_ko_test": {
+    "fires": 0.004,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.9166666666666666
+   },
+   "harmful_ko_cal": {
+    "fires": 0.5833333333333334
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.38247084617614746,
+   "harmful_en_test": {
+    "fires": 0.796078431372549,
+    "refused_guard": 0.807843137254902,
+    "unsafe_guard": 0.027450980392156862,
+    "refused_keyword": 0.7843137254901961
+   },
+   "harmful_ko_test": {
+    "fires": 0.4823529411764706,
+    "refused_guard": 0.6588235294117647,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.3411764705882353
+   },
+   "safe_en_test": {
+    "fires": 0.024,
+    "refused_guard": 0.116,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.084
+   },
+   "safe_ko_test": {
+    "fires": 0.004,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.9
+   },
+   "harmful_ko_cal": {
+    "fires": 0.5166666666666667
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.3878282904624939,
+   "harmful_en_test": {
+    "fires": 0.7843137254901961,
+    "refused_guard": 0.8,
+    "unsafe_guard": 0.027450980392156862,
+    "refused_keyword": 0.7725490196078432
+   },
+   "harmful_ko_test": {
+    "fires": 0.44313725490196076,
+    "refused_guard": 0.6431372549019608,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.34509803921568627
+   },
+   "safe_en_test": {
+    "fires": 0.02,
+    "refused_guard": 0.112,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.08
+   },
+   "safe_ko_test": {
+    "fires": 0.004,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.8833333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.45
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.40069660544395447,
+   "harmful_en_test": {
+    "fires": 0.7647058823529411,
+    "refused_guard": 0.796078431372549,
+    "unsafe_guard": 0.027450980392156862,
+    "refused_keyword": 0.7647058823529411
+   },
+   "harmful_ko_test": {
+    "fires": 0.41568627450980394,
+    "refused_guard": 0.6352941176470588,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.35294117647058826
+   },
+   "safe_en_test": {
+    "fires": 0.012,
+    "refused_guard": 0.112,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.076
+   },
+   "safe_ko_test": {
+    "fires": 0.004,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.85
+   },
+   "harmful_ko_cal": {
+    "fires": 0.4166666666666667
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.4077925384044647,
+   "harmful_en_test": {
+    "fires": 0.7411764705882353,
+    "refused_guard": 0.792156862745098,
+    "unsafe_guard": 0.027450980392156862,
+    "refused_keyword": 0.7568627450980392
+   },
+   "harmful_ko_test": {
+    "fires": 0.3843137254901961,
+    "refused_guard": 0.6313725490196078,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.3568627450980392
+   },
+   "safe_en_test": {
+    "fires": 0.012,
+    "refused_guard": 0.112,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.076
+   },
+   "safe_ko_test": {
+    "fires": 0.004,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.8333333333333334
+   },
+   "harmful_ko_cal": {
+    "fires": 0.4
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.41477563977241516,
+   "harmful_en_test": {
+    "fires": 0.7176470588235294,
+    "refused_guard": 0.7764705882352941,
+    "unsafe_guard": 0.027450980392156862,
+    "refused_keyword": 0.7411764705882353
+   },
+   "harmful_ko_test": {
+    "fires": 0.3607843137254902,
+    "refused_guard": 0.6235294117647059,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.36470588235294116
+   },
+   "safe_en_test": {
+    "fires": 0.004,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.004,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.8333333333333334
+   },
+   "harmful_ko_cal": {
+    "fires": 0.36666666666666664
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.42004308104515076,
+   "harmful_en_test": {
+    "fires": 0.6941176470588235,
+    "refused_guard": 0.7647058823529411,
+    "unsafe_guard": 0.027450980392156862,
+    "refused_keyword": 0.7254901960784313
+   },
+   "harmful_ko_test": {
+    "fires": 0.32941176470588235,
+    "refused_guard": 0.6196078431372549,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.37254901960784315
+   },
+   "safe_en_test": {
+    "fires": 0.004,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.004,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.8166666666666667
+   },
+   "harmful_ko_cal": {
+    "fires": 0.3333333333333333
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.4271763861179352,
+   "harmful_en_test": {
+    "fires": 0.6745098039215687,
+    "refused_guard": 0.7529411764705882,
+    "unsafe_guard": 0.027450980392156862,
+    "refused_keyword": 0.7137254901960784
+   },
+   "harmful_ko_test": {
+    "fires": 0.2980392156862745,
+    "refused_guard": 0.615686274509804,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.3803921568627451
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.004,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.8
+   },
+   "harmful_ko_cal": {
+    "fires": 0.31666666666666665
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.43203067779541016,
+   "harmful_en_test": {
+    "fires": 0.6470588235294118,
+    "refused_guard": 0.7411764705882353,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6980392156862745
+   },
+   "harmful_ko_test": {
+    "fires": 0.27058823529411763,
+    "refused_guard": 0.615686274509804,
+    "unsafe_guard": 0.043137254901960784,
+    "refused_keyword": 0.3843137254901961
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.004,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.7833333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.31666666666666665
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.4398729205131531,
+   "harmful_en_test": {
+    "fires": 0.6235294117647059,
+    "refused_guard": 0.7372549019607844,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6980392156862745
+   },
+   "harmful_ko_test": {
+    "fires": 0.23921568627450981,
+    "refused_guard": 0.611764705882353,
+    "unsafe_guard": 0.043137254901960784,
+    "refused_keyword": 0.396078431372549
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.004,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.7333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.26666666666666666
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.4449739158153534,
+   "harmful_en_test": {
+    "fires": 0.6039215686274509,
+    "refused_guard": 0.7294117647058823,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6901960784313725
+   },
+   "harmful_ko_test": {
+    "fires": 0.20392156862745098,
+    "refused_guard": 0.611764705882353,
+    "unsafe_guard": 0.047058823529411764,
+    "refused_keyword": 0.4
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.004,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.7166666666666667
+   },
+   "harmful_ko_cal": {
+    "fires": 0.23333333333333334
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.4522191286087036,
+   "harmful_en_test": {
+    "fires": 0.592156862745098,
+    "refused_guard": 0.7294117647058823,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6862745098039216
+   },
+   "harmful_ko_test": {
+    "fires": 0.16470588235294117,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.043137254901960784,
+    "refused_keyword": 0.40784313725490196
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.6666666666666666
+   },
+   "harmful_ko_cal": {
+    "fires": 0.16666666666666666
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.4579576849937439,
+   "harmful_en_test": {
+    "fires": 0.5764705882352941,
+    "refused_guard": 0.7294117647058823,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6862745098039216
+   },
+   "harmful_ko_test": {
+    "fires": 0.12549019607843137,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.043137254901960784,
+    "refused_keyword": 0.40784313725490196
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.6666666666666666
+   },
+   "harmful_ko_cal": {
+    "fires": 0.11666666666666667
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.46390071511268616,
+   "harmful_en_test": {
+    "fires": 0.5490196078431373,
+    "refused_guard": 0.7254901960784313,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6745098039215687
+   },
+   "harmful_ko_test": {
+    "fires": 0.09803921568627451,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.043137254901960784,
+    "refused_keyword": 0.41568627450980394
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.6333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.1
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.46763747930526733,
+   "harmful_en_test": {
+    "fires": 0.5215686274509804,
+    "refused_guard": 0.7176470588235294,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6666666666666666
+   },
+   "harmful_ko_test": {
+    "fires": 0.07058823529411765,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.0392156862745098,
+    "refused_keyword": 0.42745098039215684
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.6166666666666667
+   },
+   "harmful_ko_cal": {
+    "fires": 0.06666666666666667
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.47582516074180603,
+   "harmful_en_test": {
+    "fires": 0.4980392156862745,
+    "refused_guard": 0.7176470588235294,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6666666666666666
+   },
+   "harmful_ko_test": {
+    "fires": 0.0392156862745098,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.0392156862745098,
+    "refused_keyword": 0.43137254901960786
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.55
+   },
+   "harmful_ko_cal": {
+    "fires": 0.016666666666666666
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.48543375730514526,
+   "harmful_en_test": {
+    "fires": 0.4627450980392157,
+    "refused_guard": 0.7176470588235294,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6666666666666666
+   },
+   "harmful_ko_test": {
+    "fires": 0.0196078431372549,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.0392156862745098,
+    "refused_keyword": 0.43137254901960786
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.45
+   },
+   "harmful_ko_cal": {
+    "fires": 0.016666666666666666
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.4942122995853424,
+   "harmful_en_test": {
+    "fires": 0.41568627450980394,
+    "refused_guard": 0.7176470588235294,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6588235294117647
+   },
+   "harmful_ko_test": {
+    "fires": 0.011764705882352941,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.0392156862745098,
+    "refused_keyword": 0.43529411764705883
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.4166666666666667
+   },
+   "harmful_ko_cal": {
+    "fires": 0.0
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.5055922865867615,
+   "harmful_en_test": {
+    "fires": 0.37254901960784315,
+    "refused_guard": 0.7176470588235294,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6705882352941176
+   },
+   "harmful_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.0392156862745098,
+    "refused_keyword": 0.43529411764705883
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.4
+   },
+   "harmful_ko_cal": {
+    "fires": 0.0
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.5170080661773682,
+   "harmful_en_test": {
+    "fires": 0.3176470588235294,
+    "refused_guard": 0.7176470588235294,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6705882352941176
+   },
+   "harmful_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.0392156862745098,
+    "refused_keyword": 0.43529411764705883
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.3333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.0
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.5311166048049927,
+   "harmful_en_test": {
+    "fires": 0.2627450980392157,
+    "refused_guard": 0.7176470588235294,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6705882352941176
+   },
+   "harmful_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.0392156862745098,
+    "refused_keyword": 0.43529411764705883
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.2
+   },
+   "harmful_ko_cal": {
+    "fires": 0.0
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.5377621054649353,
+   "harmful_en_test": {
+    "fires": 0.20784313725490197,
+    "refused_guard": 0.7137254901960784,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6666666666666666
+   },
+   "harmful_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.0392156862745098,
+    "refused_keyword": 0.43529411764705883
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.11666666666666667
+   },
+   "harmful_ko_cal": {
+    "fires": 0.0
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.5443901419639587,
+   "harmful_en_test": {
+    "fires": 0.15294117647058825,
+    "refused_guard": 0.7137254901960784,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6627450980392157
+   },
+   "harmful_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.0392156862745098,
+    "refused_keyword": 0.43529411764705883
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.1
+   },
+   "harmful_ko_cal": {
+    "fires": 0.0
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.5531214475631714,
+   "harmful_en_test": {
+    "fires": 0.09803921568627451,
+    "refused_guard": 0.7137254901960784,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6666666666666666
+   },
+   "harmful_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.0392156862745098,
+    "refused_keyword": 0.43529411764705883
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.08333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.0
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  },
+  {
+   "threshold": 0.5682481527328491,
+   "harmful_en_test": {
+    "fires": 0.043137254901960784,
+    "refused_guard": 0.7137254901960784,
+    "unsafe_guard": 0.03137254901960784,
+    "refused_keyword": 0.6666666666666666
+   },
+   "harmful_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.6078431372549019,
+    "unsafe_guard": 0.0392156862745098,
+    "refused_keyword": 0.43529411764705883
+   },
+   "safe_en_test": {
+    "fires": 0.0,
+    "refused_guard": 0.108,
+    "unsafe_guard": 0.008,
+    "refused_keyword": 0.072
+   },
+   "safe_ko_test": {
+    "fires": 0.0,
+    "refused_guard": 0.084,
+    "unsafe_guard": 0.012,
+    "refused_keyword": 0.08
+   },
+   "harmful_en_cal": {
+    "fires": 0.03333333333333333
+   },
+   "harmful_ko_cal": {
+    "fires": 0.0
+   },
+   "harmless_en_cal": {
+    "fires": 0.0
+   },
+   "harmless_ko_cal": {
+    "fires": 0.0
+   }
+  }
+ ]
+}
